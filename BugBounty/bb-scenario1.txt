@@ -1,10 +1,11 @@
 Hello Zoom Security,
 
-I have found the following vulnerability in your site. 
+I have found the following vulnerability in your site. Here are the repro steps:
 
-The attacker creates a fake account and changes his e-mail. The attacker then creates a fake account and changes his
-e-mail. The e-mail confirmation link can now be used to login someone into the fake account and then monitor
-actions performed by the victim or even interact with him.
+1. The attacker creates a fake account.
+2. The attacker then changes the account e-mail address.
+3. A change approval email is sent to the attacker with a link to approve the change.
+4. Modifying the "email=" querystring parameter in the verification link allows the attacker to compromise any other users account. 
 
 Please fix this.
 
