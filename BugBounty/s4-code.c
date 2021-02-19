@@ -8,14 +8,8 @@ int main(void)
     
     printf("\n Enter the password : \n");
     
-    gets(buff);
+    fgets(buff, sizeof(buff), stdin);
     
-    if(strlen(buf) > 16)
-    {
-        printf ("\n Password entry too long. Please limit to 16 characters \n");
-        return 0;
-    }
-
     if(!strcmp(buff, "p@ssw0rd123!"))
     {
         printf ("\n Wrong Password \n");
