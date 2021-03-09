@@ -1,5 +1,5 @@
 // The following code is compiled and set as a setuid binary in a Linux environment. It takes in a user-supplied
-// filename and opens the file using root privileges if the current user is allowed access.
+// filename and opens the file using root privileges if the current user is allowed access. Identify any existing vulnerabilities.
 
 #include <unistd.h>
 #include <stdio.h>
