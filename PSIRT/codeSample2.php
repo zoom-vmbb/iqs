@@ -1,6 +1,6 @@
 The following code is used to authenticate and establish a session for the provided user. When the login succeeds,
 the user is forwarded to authenticated content that validates the established session; otherwise the user is
-forwarded to an error message.
+forwarded to an error message. Identify any existing vulnerabilities.
 
 <?php
   if(isset($_POST['username']))
