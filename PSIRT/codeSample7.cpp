@@ -1,5 +1,5 @@
 // The following code is compiled and set as a setuid binary in a Linux environment. It takes in two user-supplied
-// string arguments and outputs the contents of buffers in memory.
+// string arguments and outputs the contents of buffers in memory. Identify any existing vulnerabilities.
 
 int main(int argc, char** argv) 
 {
