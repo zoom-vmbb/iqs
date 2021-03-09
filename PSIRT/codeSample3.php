@@ -1,5 +1,5 @@
 The following changes were made to codeSample2 to mitigate issues the application was having with the
-username o’brien.
+username o’brien. Identify any existing vulnerabilities.
 
 <?php
 
