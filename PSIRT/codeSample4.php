@@ -1,5 +1,5 @@
 The follow code is utilized to write a configuration file for the application. This configuration file is included in
-every page of the application to provide information needed to connect to the database.
+every page of the application to provide information needed to connect to the database. Identify any existing vulnerabilities.
 
 <?php
   if(isset($_GET['save_config']))
