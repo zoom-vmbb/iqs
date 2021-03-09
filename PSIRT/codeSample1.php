@@ -1,4 +1,4 @@
-The following code is used to output the search results of a user-supplied query.
+The following code is used to output the search results of a user-supplied query. Identify any existing vulnerabilities.
 
 <?php
 // Get the term we are searching for from the user
