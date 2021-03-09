@@ -1,4 +1,4 @@
-The following code is utilized to allow users to upload avatar images to the application.
+The following code is utilized to allow users to upload avatar images to the application. Identify any existing vulnerabilities.
 
 <?php
   if(!empty($_FILES["avatar"]))
