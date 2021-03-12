@@ -1,4 +1,4 @@
-This snippet of code is used to receive a user-supplied packet from a network connection.
+This snippet of code is used to receive a user-supplied packet from a network connection. Identify any existing vulnerabilities.
 
 #define HEADER_SIZE sizeof(int)
 #define MAX_DATA 256
